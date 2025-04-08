@@ -1,0 +1,25 @@
+{
+  "name": "bot-market-watcher",
+  "version": "1.0.0",
+  "private": true,
+
+  "author": "hayatroid",
+
+  "description": "A traQ bot that monitors market and delivers real-time alerts",
+
+  "dependencies": {
+    "hubot-traq": "*",
+    "hubot": "^11.0.0",
+    "hubot-help": "^2.0.0",
+    "hubot-redis-brain": "^3.0.0",
+    "hubot-rules": "^2.0.0",
+    "hubot-diagnostics": "^2.0.0"
+  },
+  "scripts": {
+    "start": "hubot -a hubot-traq",
+    "start:redis": "docker run -d --name redis-hubot -p 6379:6379 -p 8001:8001 -v redis-hubot:/data redis/redis-stack:latest redis-server --dir /data/redis/ --appendonly yes --protected-mode no"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  }
+}
