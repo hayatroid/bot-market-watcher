@@ -2,18 +2,16 @@
   "name": "bot-market-watcher",
   "version": "1.0.0",
   "private": true,
-
   "author": "hayatroid",
-
   "description": "A traQ bot that monitors market and delivers real-time alerts",
-
   "dependencies": {
-    "hubot-traq": "*",
+    "@mathieuc/tradingview": "^3.5.1",
     "hubot": "^11.0.0",
+    "hubot-diagnostics": "^2.0.0",
     "hubot-help": "^2.0.0",
     "hubot-redis-brain": "^3.0.0",
     "hubot-rules": "^2.0.0",
-    "hubot-diagnostics": "^2.0.0"
+    "hubot-traq": "*"
   },
   "scripts": {
     "start": "hubot -a hubot-traq",
