@@ -6,6 +6,7 @@
   "description": "A traQ bot that monitors market and delivers real-time alerts",
   "dependencies": {
     "@mathieuc/tradingview": "^3.5.1",
+    "@traptitech/traq": "^3.24.4-0",
     "hubot": "^11.0.0",
     "hubot-diagnostics": "^2.0.0",
     "hubot-help": "^2.0.0",
